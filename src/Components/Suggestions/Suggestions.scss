@@ -1,0 +1,182 @@
+.Suggestions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+    width: 320px;
+    margin-left: 2rem;
+
+    .profile__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+
+        .image__container {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            border: 1px black solid;
+
+            img {
+                position: relative;
+                top: 3px;
+                left: 3px;
+                width: 54px;
+                border-radius: 50%;
+                border: 1px black solid;
+                background-size: cover;
+            }
+        }
+
+        .name__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-right: auto;
+
+            .username {
+                font-size: .9rem;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .fullname {
+                font-size: .9rem;
+                color: rgb(168, 168, 168);
+                font-weight: 500;
+            }
+        }
+
+        .button__container {
+
+            a {
+                text-decoration: none;
+                color: rgb(0, 149, 246);
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .suggestions__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0;
+
+        .title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: rgb(168, 168, 168);
+            margin-right: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+
+    .suggestions__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .suggestion__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.4rem 0;
+            
+            .image__container {
+                margin-right: 0.5rem;
+
+                img {
+                    width: 32px;
+                    border-radius: 50%;
+                }
+            }
+
+            .profile__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-right: auto;
+
+                .username {
+                    font-size: .9rem;
+                    color: #fff;
+                    font-weight: 600;
+                }
+    
+                .followers {
+                    font-size: .8rem;
+                    color: rgb(168, 168, 168);
+                    font-weight: 400;
+                }
+            }
+
+            .button__container {
+
+                a {
+                    text-decoration: none;
+                    color: rgb(0, 149, 246);
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1rem;
+
+            li {
+                display: inline-block;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    color: rgb(115, 115, 115);
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            li::after {
+                content: "\00B7";
+                color: rgb(168, 168, 168);
+                margin: 0 0.25rem 0 0.25rem;
+            }
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: rgb(115, 115, 115);
+        }
+    }
+}

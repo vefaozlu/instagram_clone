@@ -1,0 +1,183 @@
+.Posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.Post {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 470px;
+    color: white;
+    border-radius: 10px;
+    border: #ffffff37 1px solid;
+    margin-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.65rem;
+
+        .avatar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 32px;
+                border-radius: 50%;
+                background-size: fit;
+            }
+        }
+
+        .username-container {
+            margin-left: 0.5rem;
+            margin-right: auto;
+            color: white;
+
+            .username {
+                color: white;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .media-container {
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        svg {
+            margin: 0.5rem;
+        }
+
+        span {
+            margin: 0 auto;
+        }
+    }
+
+    .likes-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.5rem;
+
+        .liked-by-avatar {
+            img {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                margin: 0.1rem 0;
+                margin-right: 0.5rem;
+            }
+        }
+
+        .likes-text {
+            font-size: 0.9rem;
+
+            a {
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+
+        .text {
+            height: 1.2rem;
+            overflow: hidden;
+            font-size: 0.9rem;
+
+            a {
+                margin-right: 0.3rem;
+                color: white;
+                font-weight: 500;
+            }
+        }
+
+        a {
+            color: silver;
+            font-size: 0.9rem;
+        }
+
+        span {
+            margin: 0.5rem 0;
+        }
+    }
+
+    .shared-date {
+        padding: 0 0.5rem;
+        margin-bottom: 0.3rem;
+
+        a {
+            color: silver;
+            font-size: 0.7rem;
+        }
+    }
+
+    .comment-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+        border-top: #ffffff21 1px solid;
+        padding: 0.5rem;
+
+        .textfield {
+            background-color: transparent;
+            border: none;
+            padding: 0.25rem;
+            color: #fff;
+            width: 370px;
+        }
+
+        .textfield:focus {
+            border: none;
+            outline: none;
+        }
+
+        .button {
+            background-color: transparent;
+            border: none;
+            padding: 0.25rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .placeholder {
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+            color: silver;
+            font-weight: 300;
+        }
+
+        a {
+            margin-left: auto;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgb(168, 168, 168);
+        }
+    }
+
+}

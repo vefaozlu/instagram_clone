@@ -1,0 +1,100 @@
+.Stories {
+    box-sizing: border-box;
+    margin: 1rem 0;
+    background-color: black;
+    border-radius: 10px;
+    border: #ffffff37 1px solid;
+    position: relative;
+    width: 470px;
+    color: white;
+
+    .left_button {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        border: none;
+        z-index: 10;
+    }
+
+    .right_button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        border: none;
+        z-index: 10;
+    }
+
+    .story-list {
+        display: inline-flex;
+        padding: 0.8rem;
+        width: 100%;
+        overflow: scroll;
+        box-sizing: border-box;
+        scroll-snap-type: none;
+        scrollbar-width: none;
+        z-index: 0;
+        scroll-behavior: smooth;
+    }
+}
+
+.Story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+
+    .unseen_image {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        background: linear-gradient(45deg, rgb(246, 199, 68), rgb(193, 40, 191));
+    }
+
+    .seen_image {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        border: 1px rgba(192, 192, 192, 0.445) solid;
+    }
+
+    img {
+        position: relative;
+        top: 3px;
+        left: 3px;
+        width: 54px;
+        border-radius: 50%;
+        border: 1px #000 solid;
+        background-size: cover;
+    }
+
+    .seen_text {
+        font-size: 0.7rem;
+        font-weight: 500;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        color: silver;
+    }
+
+    .unseen_text {
+        font-size: 0.7rem;
+        font-weight: 500;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        color: #fff;
+    }
+}

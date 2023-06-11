@@ -1,0 +1,220 @@
+.PostView {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+
+    .media__container {
+        height: 90vh;
+
+        img {
+            width: 30vw;
+            background-size: contain;
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        width: 30vw;
+        height: 90vh;
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px #ffffff79 solid;
+
+            .avatar__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0.5rem;
+
+                img {
+                    width: 32px;
+                    border-radius: 50%;
+                }
+            }
+
+            .username__container {
+                margin-right: auto;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .comments {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px #ffffff79 solid;
+            flex-grow: 1;
+            overflow-y: scroll;
+            scroll-snap-type: none;
+            scrollbar-width: none;
+
+            .comment {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                color: #fff;
+                padding: 0.5rem;
+
+                .image__container {
+                    margin-right: 1rem;
+
+                    img {
+                        width: 32px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .content {
+                    display: inline;
+                    font-size: 0.9rem;
+
+                    .text__content {
+                        margin-right: auto;
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: 600;
+                            margin-right: 0.5rem;
+                        }
+                    }
+
+                    .bottom {
+                        display: inline;
+                        color: rgb(168, 168, 168);
+                        font-size: 0.8rem;
+
+                        .date {
+                            margin-right: 0.5rem;
+                        }
+
+                        .likes {
+                            margin-right: 0.5rem;
+                            font-weight: 500;
+                        }
+
+                        .reply {
+                            margin-right: 0.5rem;
+                            font-weight: 500;
+                        }
+
+                        .translate {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttons__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            svg {
+                margin: 0.5rem;
+            }
+
+            span {
+                margin: 0 auto;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0.5rem;
+
+            .likes {
+                color: #fff;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-bottom: 0.25rem;
+            }
+
+
+            .date {
+                color: rgb(168, 168, 168);
+                font-size: 0.7rem;
+                font-weight: 500;
+            }
+        }
+
+        .comment-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            align-items: center;
+            border-top: #ffffff21 1px solid;
+            padding: 0.5rem;
+
+            form {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+
+                .textfield {
+                    flex-grow: 1;
+                    background-color: transparent;
+                    border: none;
+                    padding: 0.25rem;
+                    color: #fff;
+                    flex: 80%;
+                    flex-grow: 1;
+                    max-width: 100%;
+                }
+
+                .textfield:focus {
+                    border: none;
+                    outline: none;
+                }
+
+                .button {
+                    background-color: transparent;
+                    border: none;
+                    padding: 0.25rem;
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                .placeholder {
+                    margin-left: 0.5rem;
+                    font-size: 0.8rem;
+                    color: silver;
+                    font-weight: 300;
+                }
+
+                a {
+                    margin-left: auto;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: rgb(168, 168, 168);
+                }
+            }
+        }
+    }
+}
